@@ -123,7 +123,7 @@ const HomePage = () => {
             ))}
           </div>
            {/* price filter */}
-           <h4 className="text-center mt-4">Filter By Price</h4>
+           {/* <h4 className="text-center mt-4">Filter By Price</h4> */}
           <div className="d-flex flex-column">
             <Radio.Group onChange={(e) => setRadio(e.target.value)}>
               {Prices?.map((p) => (
@@ -133,31 +133,31 @@ const HomePage = () => {
               ))}
             </Radio.Group>
           </div>
-          <div className="d-flex flex-column">
+          {/* <div className="d-flex flex-column">
             <button
               className="btn btn-danger"
               onClick={() => window.location.reload()}
             >
               RESET FILTERS
             </button>
-          </div>
+          </div> */}
         </div>
         <div className="col-md-9 ">
-          {JSON.stringify(radio,null,4)}
-          <h1 className="text-center">All Products</h1>
+          {/* {JSON.stringify(radio,null,4)} */}
+          <h1 className="text-center">Our Products</h1>
           <div className="d-flex flex-wrap">
             {products?.map((p) => (
               
                 <div className="card m-2" style={{ width: "18rem" }}>
                   <img
                     src={`/api/v1/product/product-photo/${p._id}`}
-                    className="card-img-top"
+                    className="card-img-top" style={{height:"300px"}}
                     alt={p.name}
                   />
                   <div className="card-body">
                     <h5 className="card-title">{p.name}</h5>
                     <p className="card-text">{p.description.substring(0, 30)}...</p>
-                    <p className="card-text"> ${p.price}</p>
+                    <p className="card-text"> ₹{p.price}</p>
                     <button className="btn btn-primary ms-1" onClick={() => navigate(`/product/${p.slug}`)}>More details</button>
                     <button
                       className="btn btn-dark ms-1"

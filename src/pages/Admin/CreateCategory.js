@@ -3,6 +3,7 @@ import AdminMenu from './../../components/Layout/AdminMenu'
 import Layout from './../../components/Layout/Layout'
 import toast from "react-hot-toast";
 import axios from "axios";
+import DashboardAdmin from "./DashboardAdmin";
 import CategoryForm from "../../components/Form/CategoryForm";
 import {Modal} from "antd"
 const CreateCategory = () => {
@@ -95,6 +96,7 @@ return (
         <div className="row">
           <div className="col-md-3">
             <AdminMenu />
+            <DashboardAdmin />
           </div>
           <div className="col-md-9">
             <h1>Manage Category</h1>
@@ -120,7 +122,7 @@ return (
                         <td key={c._id}>{c.name}</td>
                         <td>
                           <button
-                            className="btn btn-primary ms-2"
+                            className="btn btn-info ms-2"
                             onClick={() => {
                               setVisible(true);
                               setUpdatedName(c.name);
@@ -130,7 +132,7 @@ return (
                             Edit
                           </button>
                           <button
-                            className="btn btn-danger ms-2"
+                            className="btn btn-warning ms-2"
                             onClick={() => {
                               handleDelete(c._id);
                             }}

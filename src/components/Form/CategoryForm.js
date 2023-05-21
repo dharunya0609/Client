@@ -8,13 +8,13 @@ const CategoryForm = ({ handleSubmit, value, setValue }) => {
           <input
             type="text"
             className="form-control"
-            placeholder="Enter new category"
+            placeholder="Enter the category"
             value={value}
             onChange={(e) => setValue(e.target.value)}
           />
         </div>
 
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn btn-success">
           Submit
         </button>
       </form>

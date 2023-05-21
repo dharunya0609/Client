@@ -4,6 +4,7 @@ import AdminMenu from "./../../components/Layout/AdminMenu";
 import toast from "react-hot-toast";
 import axios from "axios";
 import { Select } from "antd";
+import DashboardAdmin from "./DashboardAdmin";
 import { useNavigate } from "react-router-dom";
 const { Option } = Select;
 
@@ -68,6 +69,7 @@ const CreateProduct = () => {
         <div className="row">
           <div className="col-md-3">
             <AdminMenu />
+            <DashboardAdmin />
           </div>
           <div className="col-md-9">
             <h1>Create Product</h1>

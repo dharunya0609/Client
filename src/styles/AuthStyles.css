@@ -1,14 +1,20 @@
 /* ===================================
 ========= register page  */
 .form-container {
-  margin-top: 60px;
+  margin-top: 65px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 70vh;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 170px;
+  padding-left: 200px;
+  /* min-height: 100vh; */
+  height: 75%;
   flex-direction: column;
   background-color: #ffdee9;
-  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+  /* background-image: url('https://images.pexels.com/photos/6102552/pexels-photo-6102552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+  background-image: url('https://images.pexels.com/photos/5386686/pexels-photo-5386686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: 100%;
+  /* background-repeat: no-repeat; */
 }
 
 .form-container form {

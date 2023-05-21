@@ -6,7 +6,7 @@ import {Toaster} from "react-hot-toast";
 const Layout = ({children,title,description,keywords,author}) => {
   return (
   <>
-  <Helmet>
+       <Helmet>
         <meta charSet="utf-8" />
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
@@ -23,9 +23,9 @@ const Layout = ({children,title,description,keywords,author}) => {
 }
 
 Layout.defaultProps = {
-  title: "Ecommerce app - shop now",
+  title: "Cake Ordering",
   description: "mern stack project",
   keywords: "mern,react,node,mongodb",
-  author: "aparna",
+  author: "Signature cakes & Stones",
 };
-export default Layout
+export default Layout;

@@ -2,6 +2,7 @@ import React from "react";
 import { useSearch } from "../../context/search";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import {  IoSearchOutline} from "react-icons/io5";
 const SearchInput = () => {
   const [values, setValues] = useSearch();
   const navigate = useNavigate();
@@ -34,7 +35,7 @@ const SearchInput = () => {
           onChange={(e) => setValues({ ...values, keyword: e.target.value })}
         />
         <button className="btn btn-outline-success" type="submit">
-          Search
+         <IoSearchOutline/>
         </button>
       </form>
     </div>

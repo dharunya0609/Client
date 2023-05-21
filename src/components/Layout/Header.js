@@ -7,6 +7,7 @@ import useCategory from '../../hooks/useCategory';
 import { useCart } from "../../context/cart";
 import { Badge } from "antd";
 
+
 const Header = () => {
   const [auth, setAuth] = useAuth();
   const [cart] = useCart();
@@ -36,17 +37,22 @@ const Header = () => {
             <span className="navbar-toggler-icon" />
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <Link to="/" className="navbar-brand">
-               VELAN AUTOS
-            </Link>
+            <Link to="/" className="navbar-brand">THE SIGNATURE CAKES AND STONES</Link>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <SearchInput />
               <li className="nav-item">
-                <NavLink to="/" className="nav-link ">
+                <NavLink to="/about" className="nav-link ">
                   ABOUT
                 </NavLink>
               </li>
-              <li className="nav-item dropdown">
+              
+              <li className="nav-item">
+                <NavLink to="/menu" className="nav-link ">
+                  MENU
+                </NavLink>
+              </li>
+              
+              {/* <li className="nav-item dropdown">
                 <Link
                   className="nav-link dropdown-toggle"
                   to={"/categories"}
@@ -71,7 +77,7 @@ const Header = () => {
                     </li>
                   ))}
                 </ul>
-              </li>
+              </li> */}
 
               {!auth?.user ? (
                 <>
@@ -108,11 +114,6 @@ const Header = () => {
                         >
                           Dashboard
                         </NavLink>
-                      </li>
-                      <NavLink to="/feedback" className="nav-link">
-                          <b>Feedback </b>
-                    </NavLink>
-                      <li>
                         <NavLink
                           onClick={handleLogout}
                           to="/login"

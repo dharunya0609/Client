@@ -5,6 +5,7 @@ import AdminMenu from "../../components/Layout/AdminMenu";
 import Layout from "../../components/Layout/Layout";
 import { useAuth } from "../../context/auth";
 import moment from "moment";
+import DashboardAdmin from "./DashboardAdmin";
 import { Select } from "antd";
 const { Option } = Select;
 
@@ -47,6 +48,7 @@ const AdminOrders = () => {
       <div className="row dashboard">
         <div className="col-md-3">
           <AdminMenu />
+          <DashboardAdmin />
         </div>
         <div className="col-md-9">
           <h1 className="text-center">All Orders</h1>
@@ -101,7 +103,7 @@ const AdminOrders = () => {
                       </div>
                       <div className="col-md-8">
                         <p>{p.name}</p>
-                        <p>{p.description.substring(0, 30)}</p>
+                        <p>{p.description.substring(0, 50)}</p>
                         <p>Price : {p.price}</p>
                       </div>
                     </div>

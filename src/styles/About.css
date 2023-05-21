@@ -1,0 +1,95 @@
+/* image + text */
+.container {
+    display: flex-start;
+    align-items: left;
+    justify-content: flex-start;
+    padding-left: 100px;
+    padding-right: 100px;
+
+  }
+  
+  img {
+    max-width: 100%;
+    max-height:100%;
+
+  }
+  .card-img-overlay
+  {
+    width:55%;
+  }
+  .text {
+    font-size: 20px;
+    padding-left: 20px;
+  } 
+
+
+  .about {
+    font-family: Arial;
+    font-size: 60px;
+    text-align: center;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  .about-text{
+    font-family: Arial;
+    font-size: 20px;
+    text-align:center;
+    padding-left: 20px;
+    padding-right: 20px;
+    animation: fadeIn 7s;
+    -webkit-animation: fadeIn 7s;
+    -moz-animation: fadeIn 7s;
+    -o-animation: fadeIn 7s;
+    -ms-animation: fadeIn 7s;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+
+
+
+  body{
+    background-color:#eee;
+}
+
+.card{
+    
+    border:none;
+}
+
+.user-content p{
+    margin-top:5px;
+    font-size:12px;
+}
+
+
+.ratings i{
+    color:blue;
+}

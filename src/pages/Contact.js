@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "./../components/Layout/Layout";
-import { BiMailSend, BiPhoneCall, BiSupport, BiLocationPlus } from "react-icons/bi";
-import {IoLocationSharp} from "react-icons/io5";
+import { BiMailSend, BiPhoneCall } from "react-icons/bi";
+import { IoLocationSharp } from "react-icons/io5";
 const Contact = () => {
   return (
     <Layout title={"Contact us"}>
@@ -9,32 +9,27 @@ const Contact = () => {
       <div className="row contactus ">
         <div className="col-md-6 ">
           <img
-            src="/images/velan.jpg"
+            src="https://content3.jdmagicbox.com/comp/erode/c8/9999px424.x424.160908152949.b9c8/catalogue/the-signature-cakes-and-stones-erode-ho-erode-pastry-shops-z5nuvy2qth.jpg"
             alt="contactus"
-            style={{ width: "100%" }}
+            style={{ width: "100%", height: "400px" }}
           />
         </div>
         <div className="col-md-4">
-          <h1 className="bg-dark p-2 text-white text-center">CONTACT US</h1>
+          <h1 className="bg-dark p-2 text-white text-center">Get In Touch!</h1>
+
           <p className="text-justify mt-2">
-            Ours services are available 24 * 7.
-            Feel Free to call!
+            Orders welcome for all occassions !!
           </p>
+
           <p className="mt-3">
-            <BiMailSend /> : velantvs@gmail.com
+            <BiMailSend /> : <a href="mailto:thesignature@gmail.com">thesignature@gmail.com</a>
           </p>
+
           <p className="mt-3">
-            <BiPhoneCall /> : 98427-06599
-            <BiPhoneCall /> : 98427-06577
-          </p>
-          <p className="mt-3">
-            <BiSupport /> : 04294-262222
-            
+            <BiPhoneCall /> : 78713 88843
           </p>
           <p>
-
-          <IoLocationSharp/>:109B, R.S. Road, Uthukuli raod, Tirupur
-            Tamilnadu - 638751
+            <IoLocationSharp />:No 330 Kohinoor Hotel, Brough Road, Erode HO, Erode - 638001 (Near Max Showroom)
           </p>
         </div>
       </div>

@@ -11,12 +11,26 @@ const Dashboard = () => {
           <div className="col-md-3">
            <UserMenu/>
           </div>
+
+
           <div className="col-md-9">
-            <div className="card w-75 p-3">
-              <h3>{auth?.user?.name}</h3>
-              <h3>{auth?.user?.email}</h3>
-              <h3>{auth?.user?.address}</h3>
-            </div>
+
+          <h2 style={{"textAlign":"center"}}>User Profile Card</h2>
+
+                    <div className="card w-75 p-3">
+                      <img src="#" alt="John" width={100} />
+                      <h1>{auth?.user?.name}</h1>
+                      <h3>{auth?.user?.email}</h3>
+                      <h3>{auth?.user?.address}</h3>
+
+                      
+                      
+                    </div>
+
+
+
+
+        
           </div>
         </div>
       </div>

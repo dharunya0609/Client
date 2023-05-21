@@ -2,6 +2,7 @@ import React from "react";
 import AdminMenu from "./../../components/Layout/AdminMenu";
 import Layout from "./../../components/Layout/Layout";
 import { useAuth } from "../../context/auth";
+import DashboardAdmin from "./DashboardAdmin";
 const AdminDashboard = () => {
   const [auth] = useAuth();
   return (
@@ -10,6 +11,7 @@ const AdminDashboard = () => {
         <div className="row">
           <div className="col-md-3">
             <AdminMenu />
+            <DashboardAdmin />
           </div>
           <div className="col-md-9">
             <div className="card w-75 p-3">
